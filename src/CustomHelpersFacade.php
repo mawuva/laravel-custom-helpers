@@ -1,13 +1,13 @@
 <?php
 
-namespace Mawuekom\LaravelCustomHelpers;
+namespace Mawuekom\CustomHelpers;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Mawuekom\LaravelCustomHelpers\Skeleton\SkeletonClass
+ * @see \Mawuekom\CustomHelpers\Skeleton\SkeletonClass
  */
-class LaravelCustomHelpersFacade extends Facade
+class CustomHelpersFacade extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class LaravelCustomHelpersFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel-custom-helpers';
+        return 'custom-helpers';
     }
 }

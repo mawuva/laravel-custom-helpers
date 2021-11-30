@@ -2,10 +2,10 @@
     "name": "mawuekom/laravel-custom-helpers",
     "description": "A bunch of custom helpers",
     "keywords": [
-        "mawuekom",
-        "laravel-custom-helpers"
+        "mawuekom", "laravel", "laravel-helpers", "helpers",
+        "laravel-custom-helpers", "custom-helpers"
     ],
-    "homepage": "https://github.com/mawuekom/laravel-custom-helpers",
+    "homepage": "https://github.com/mawuva/laravel-custom-helpers",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Mawuekom\\LaravelCustomHelpers\\": "src"
+            "Mawuekom\\CustomHelpers\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mawuekom\\LaravelCustomHelpers\\Tests\\": "tests"
+            "Mawuekom\\CustomHelpers\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mawuekom\\LaravelCustomHelpers\\LaravelCustomHelpersServiceProvider"
+                "Mawuekom\\CustomHelpers\\CustomHelpersServiceProvider"
             ],
             "aliases": {
-                "LaravelCustomHelpers": "Mawuekom\\LaravelCustomHelpers\\LaravelCustomHelpersFacade"
+                "CustomHelpers": "Mawuekom\\CustomHelpers\\CustomHelpersFacade"
             }
         }
     }
