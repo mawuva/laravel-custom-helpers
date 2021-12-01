@@ -110,6 +110,8 @@ class DataHelpers
      */
     public function getModelInstance($id = null, $columns = ['*']): Model
     {
-        return $this ->fromId($id) ->getDataRow($columns);
+        return ($id !== null)
+                ? $this ->fromId($id) ->getDataRow($columns)
+                : $this;
     }
 }
