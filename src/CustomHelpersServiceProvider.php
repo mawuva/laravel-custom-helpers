@@ -12,6 +12,7 @@ class CustomHelpersServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        require __DIR__.'/helpers.php';
         /*
          * Optional methods to load your package assets
          */
