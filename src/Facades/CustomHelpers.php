@@ -1,6 +1,6 @@
 <?php
 
-namespace Mawuekom\CustomHelpers;
+namespace Mawuekom\CustomHelpers\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
