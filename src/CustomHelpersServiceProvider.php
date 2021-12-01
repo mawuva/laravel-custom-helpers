@@ -4,6 +4,7 @@ namespace Mawuekom\CustomHelpers;
 
 use Illuminate\Support\ServiceProvider;
 use Mawuekom\CustomHelpers\CustomHelpers;
+use Mawuekom\CustomHelpers\DataHelpers;
 
 class CustomHelpersServiceProvider extends ServiceProvider
 {
@@ -57,6 +58,10 @@ class CustomHelpersServiceProvider extends ServiceProvider
         // Register the main class to use with the facade
         $this->app->singleton('custom-helpers', function () {
             return new CustomHelpers;
+        });
+
+        $this->app->singleton('custom-helpers.data-helpers', function () {
+            return new DataHelpers;
         });
     }
 }

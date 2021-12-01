@@ -18,6 +18,7 @@
     "require": {
         "php": "^7.4|^8.0",
         "illuminate/support": "^8.0",
+        "illuminate/database": "^8.0",
         "mawuekom/laravel-model-uuid": "^2.1"
     },
     "require-dev": {
@@ -48,7 +49,8 @@
                 "Mawuekom\\CustomHelpers\\CustomHelpersServiceProvider"
             ],
             "aliases": {
-                "CustomHelpers": "Mawuekom\\CustomHelpers\\Facades\\CustomHelpers"
+                "CustomHelpers": "Mawuekom\\CustomHelpers\\Facades\\CustomHelpers",
+                "DataHelpers": "Mawuekom\\CustomHelpers\\Facades\\DataHelpers"
             }
         }
     }

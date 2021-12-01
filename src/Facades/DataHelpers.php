@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \Mawuekom\CustomHelpers\Skeleton\SkeletonClass
  */
-class CustomHelpers extends Facade
+class DataHelpers extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -16,6 +16,6 @@ class CustomHelpers extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'custom-helpers';
+        return 'custom-helpers.data-helpers';
     }
 }
