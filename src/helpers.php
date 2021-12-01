@@ -1,5 +1,22 @@
 <?php
 
+use Mawuekom\CustomHelpers\Facades\DataHelpers;
+
+if ( ! function_exists('data_helpers')) {
+    /**
+     * Get data helpers instance
+     *
+     * @param string    $model
+     * @param array     $params
+     * @param bool      $inTrashed
+     * 
+     * @return mixed
+     */
+    function data_helpers($model, $params = [], $inTrashed = false) {
+        return DataHelpers::initModel($model, $params, $inTrashed);
+    }
+}
+
 if ( ! function_exists('success_response')) {
     /**
      * Return array of response
