@@ -112,6 +112,6 @@ class DataHelpers
     {
         return ($id !== null)
                 ? $this ->fromId($id) ->getDataRow($columns)
-                : $this;
+                : $this ->model;
     }
 }
