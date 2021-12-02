@@ -20,7 +20,7 @@ class DataHelpers
     /**
      * Init model or create new model instance
      *
-     * @param string    $model
+     * @param string|Illuminate\Database\Eloquent\Model $model
      * @param array     $params
      * @param bool      $inTrashed
      *
@@ -29,7 +29,9 @@ class DataHelpers
     public function initModel($model, $params = [], $inTrashed = false)
     {
         $this ->inTrashed = $inTrashed;
-        $result = (empty($params)) ? app($model) : app($model) ->where($params);
+        $model      = (!$model instanceof Model) ? app($model) : $model;
+        
+        $result = (empty($params)) ? $model : $model ->where($params);
 
         $this ->model = ($this ->inTrashed) ? $result ->withTrashed() : $result;
 
